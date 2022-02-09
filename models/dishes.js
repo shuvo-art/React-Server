@@ -28,10 +28,6 @@ const dishSchema = new Schema({
         required: true,
         unique: true
     },
-    description: {
-        type: String,
-        required: true
-    },
     image: {
         type: String,
         required: true
@@ -52,6 +48,10 @@ const dishSchema = new Schema({
     featured: {
         type: Boolean,
         default: false
+    },
+    description: {
+        type: String,
+        required: true
     },
     comments: [ commentSchema ]
 },{
